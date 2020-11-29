@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WS Cliente</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Formulario do Cliente</h2>
+        <form name="ws" method="post" action="ClienteConversor">
+            <p>Moeda: </p>
+            <p><select name="moeda" required>
+                <option selected disabled>Selecione</option>
+                <option value="RD">Real para Dolar</option>
+                <option value="DR">Dolar para Real</option>
+                <option value="RE">Real para Euro</option>
+                <option value="ER">Euro para Real</option>
+                <option value="RL">Real para Libra</option>
+                <option value="LR">Libra para Real</option>
+            </select></p>
+            <p>Digite o valor:</p>
+            <p><input type="text" name="valor"></p>
+            <p><input type="submit" name="enviar" value="Enviar"></p>
+        </form>
+    </body>
+</html>
